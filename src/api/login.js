@@ -24,8 +24,9 @@ export function logout() {
 
 export function getUserInfo(token) {
   return request({
-    url: '/user/info',
-    method: 'get',
+    // url: ConstConfig.apiPath + '/GetProfile.json',
+    url: '/api/GetProfile.json',
+    method: 'post',
     params: { token }
   })
 }

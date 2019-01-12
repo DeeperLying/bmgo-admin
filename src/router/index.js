@@ -110,7 +110,7 @@ export default new Router({
   routes: constantRouterMap
 })
 
-export const asyncRouterMap = [
+export const asyncRouterMap = [ // 用于admin权限时
   {
     path: '/permission',
     component: Layout,
