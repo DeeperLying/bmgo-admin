@@ -2,9 +2,19 @@
  * Created by jiachenpan on 16/11/18.
  */
 
-export function isvalidUsername(str) {
+export function isvalidUsername(phone) {
+  // 模版方法用于一开始验证用户名
+  /*
   const valid_map = ['admin', 'editor']
   return valid_map.indexOf(str.trim()) >= 0
+  var phoneReg = /^[1][3,4,5,7,8][0-9]{9}$/
+  if (!phone) {
+    return false
+  } else if (!phoneReg.test(phone)) {
+    return false
+  }
+  return true
+  */
 }
 
 /* 合法uri*/

@@ -1,12 +1,15 @@
-import request from '@/utils/request'
+import request from '@/utils/request/'
+// import { ConstConfig } from '@/utils/'
 
-export function loginByUsername(username, password) {
+export function loginByUsername(username, password, remember) {
   const data = {
     username,
-    password
+    password,
+    remember
   }
   return request({
-    url: '/login/login',
+    // url: ConstConfig.apiPath + '/Login.json',
+    url: '/api/Login.json',
     method: 'post',
     data
   })

@@ -289,3 +289,14 @@ export function uniqueArr(arr) {
 export function isExternal(path) {
   return /^(https?:|mailto:|tel:)/.test(path)
 }
+
+/**
+ * 以上为模版原始数据下面的均为我加的
+ * */
+
+export const ConstConfig = {
+  apiPath: '/api/content/phone',
+  authApiPath: '/api_passport',
+  wxApiPath: '/api',
+  wxAppId: 'wx83d351356eb8c592'
+}
