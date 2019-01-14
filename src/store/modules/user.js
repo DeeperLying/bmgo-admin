@@ -68,8 +68,9 @@ const user = {
             reject('Verification failed, please login again.')
           }
           const data = response.data
+          data.roles = ['user', 'editor', 'admin'] // 模拟权限 数组
           if (data.roles && data.roles.length > 0) { // 验证返回的roles是否是一个非空数组
-            commit('SET_ROLES', data.user)
+            commit('SET_ROLES', data.roles)
           } else {
             reject('getInfo: roles must be a non-null array!')
           }
