@@ -28,6 +28,9 @@ export default {
     isCollapse() {
       return !this.sidebar.opened
     }
+  },
+  mounted: function() {
+    console.log(this.$route.path)
   }
 }
 </script>

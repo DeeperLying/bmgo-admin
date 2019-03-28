@@ -792,6 +792,7 @@ export default {
     },
     // 上传图片
     upload() {
+      console.log(this)
       let that = this,
         {
           lang,
